@@ -3,7 +3,9 @@ const mongoose = require('mongoose');
 const launchesSchema = new mongoose.Schema({
     flightNumber: {
         type: Number,
-        required: true,
+    },
+    SXflightNumber:{
+        type: Number,
     },
     launchDate: {
         type: Date,
@@ -19,7 +21,7 @@ const launchesSchema = new mongoose.Schema({
     },
     target:{
         type: String,
-        required: true,
+        
     },
     customers:[String],
     upcoming:{
